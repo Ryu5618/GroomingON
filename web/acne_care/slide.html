@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>그루밍타임</title>
+	<link rel="stylesheet" href="../../css/acnecare-css/slide.css">
+	<link rel="stylesheet" href="../../css/header.css">
+	<link rel="stylesheet" href="../../css/index.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../picture/logo.png">
+	<script>
+		var x = 'white';
+		var y = '#1B1B1B';
+		var z = document.querySelector('.bars').style.backgroundColor;
+		function darkmode() {
+			document.querySelector('body').style.backgroundColor = y;
+			document.querySelector('img').src = '../picture/logo_white.png';
+			z = y;
+			document.querySelector('.sikafont_big').style.color = x;
+			document.querySelector('.mildfont_big').style.color = x;
+			document.querySelector('#mildfont > span').style.color = x;
+		}
+		function iinn() {
+			if (document.querySelector('#checkbox2').value === 'home') {
+				document.querySelector('.index').style.display = 'block';
+				document.querySelector('img').src = '../../picture/logo_white.png';
+				document.querySelector('#checkbox2').value = 'out'
+			} else {
+				document.querySelector('.index').style.display = 'none';
+				document.querySelector('img').src = '../../picture/logo_black.png';
+				document.querySelector('#checkbox2').value = 'home'
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="mainContainer">
+		<header>
+			<div id="topLeft">
+				<div id="logo">
+					<a href="../index.html"><img src="../../picture/logo_black.png" alt="로고"></a>
+				</div>
+				<nav>
+					<ul class="topMenu" id="rriigghhtt">
+						<li><a href="#" class="sel">트러블 종류</a></li>
+						<li><a href="../apchul.html" class="unsel">여드름 압출</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="topRight">
+				<div class="sns_go">
+					<ul class="topMenu" id="lleefftt">
+						<li>
+							<a href="#">
+								<div id="moon">
+									<div class="btn-container">
+										<label class="switch btn-color-mode-switch" onclick="darkmode()">
+											<input value="1" id="color_mode" name="color_mode" type="checkbox">
+											<label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark" for="color_mode"></label>
+										</label>
+								</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div id="search">
+									<input id="checkbox2" type="checkbox" onclick="iinn()" value="home">
+									<label class="toggle toggle2" for="checkbox2">
+										<div id="bar4" class="bars"></div>
+										<div id="bar5" class="bars"></div>
+										<div id="bar6" class="bars"></div>
+									</label>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="index">
+			<div class="jip">
+				<div class="mal">
+					<div class="ms">
+						<div class="bigjae">맨즈케어</div>
+						<ul>
+							<li class="sojae"><a href="./care_squence/toner.html">기초화장품</a></li>
+							<li class="minijae"><a href="./care_squence/toner.html">- 토너</a></li>
+							<li class="minijae"><a href="./care_squence/emple.html">- 앰플</a></li>
+							<li class="minijae"><a href="./care_squence/cream.html">- 크림</a></li>
+							<li class="sojae"><a href="./typereco.html">피부타입</a></li>
+						</ul>
+					</div>
+					<div class="ms">
+						<div class="bigjae">피지/여드름</div>
+						<ul>
+							<li class="sojae"><a href="">트러블 종류</a></li>
+							<li class="minijae"><a href="./slide.html #acne">- 좁쌀여드름</a></li>
+							<li class="minijae"><a href="./slide.html #headhead">- 블랙헤드</a></li>
+							<li class="minijae"><a href="./slide.html #hwanong">- 화농성여드름</a></li>
+							<li class="minijae"><a href="./slide.html #monang">- 모낭염</a></li>
+							<li class="sojae"><a href="../apchul.html">여드름 압출</a></li>
+						</ul>
+					</div>
+					<div class="ms">
+						<div class="bigjae">색소침착</div>
+						<ul>
+							<li class="sojae"><a href="../pih.html">색소침착</a></li>
+							<li class="sojae"><a href="../suncream.html">선크림</a></li>
+						</ul>
+					</div>
+					<div class="ms">
+						<div class="bigjae">스토어</div>
+						<ul>
+							<li class="sojae"><a href="../product.html">스토어</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+				<input type="radio" name="slide" id="slide01" checked>
+				<input type="radio" name="slide" id="slide02">
+				<input type="radio" name="slide" id="slide03">
+				<input type="radio" name="slide" id="slide04">
+			<div class="slidewrap">
+				<ul class="slidelist">
+					<li>
+						<a name="acne">
+							<div class="main">
+								<section>
+									<div>
+										<div class="ww">
+											<a name="acne1"><h1>좁쌀 여드름</h1></a>
+											<h3>여드름의 초기 단계</h3>
+											<div id="acneeximg1"></div>
+											<div></div>
+											<div class="cfcfcf">
+												<p>피부에 수분이 떨어지고 유분이 많아지는 시간에 생성</p>
+												<p>유분 제거+ 수분 보충</p>
+											</div>
+										</div>
+									</div> 
+								</section>
+								<section>
+									<div class="hash">#좁쌀 여드름 예방</div>
+									<h3>추천 관리법</h3>
+									<div class="garo">
+										<div class="reco1" id="iimmgg1">기름 종이</div>
+										<div class="reco1" id="iimmgg2">수분 미스트</div>
+									</div>
+									<div class="hash">#좁쌀 여드름 해결</div>
+									<h3>추천 아이템</h3>
+									<div class="garo">
+										<div>
+											<div class="garogaro" id="iimmgg3"></div>
+											<p>실리실산 약국템</p>
+										</div>
+										<div>
+											<div class="garogaro" id="iimmgg4"></div>
+											<p>수분 앰플</p>
+										</div>
+										<div>
+											<div class="garogaro" id="iimmgg5"></div>
+											<p>약알칼리 클렌징폼</p>
+										</div>
+										<div>
+											<div class="garogaro" id="iimmgg6"></div>
+											<p>약산성 클렌징폼</p>
+										</div>
+										<div>
+											<div class="garogaro" id="iimmgg7"></div>
+											<p>장벽크림</p>
+										</div>
+									</div>
+								</section>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a name="blackhead">
+							<div class="main">
+								<section>
+									<div>
+										<div class="ww">
+											<a name="acne2"><h1>블랙헤드</h1></a>
+											<h3>산화로 인해 검게 변한 피지</h3>
+											<div id="acneeximg2"></div>
+											<div></div>
+											<div class="cfcfcf">
+												<p>좁쌀 여드름을 예방하는 것이 가장 좋은 방법</p>
+												<p>블랙헤드 녹여서 제거하기</p>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section>
+									<div class="hash">#블랙헤드 예방</div>
+									<h3>추천 관리법</h3>
+									<div class="garo">
+										<div class="reco2" id="i2mmgg1">좁쌀여드름 예방 관리</div>
+										<div class="reco2" id="i2mmgg2">모공을 열어준 뒤, 클렌징</div>
+										<div class="reco2" id="i2mmgg3">블랙헤드 압출X</div>
+									</div>
+									<div class="hash">#블랙헤드 해결</div>
+									<h3>추천 아이템</h3>
+									<div class="garo">
+										<div>
+											<div class="garogaro" id="i2mmgg4"></div>
+											<p>실리실산 약국템</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i2mmgg5"></div>
+											<p>클렌징 오일</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i2mmgg6"></div>
+											<p>클레이 마스크팩</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i2mmgg7"></div>
+											<p>약산성 클렌징폼</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i2mmgg8"></div>
+											<p>녹이는 코팩</p>
+										</div>
+									</div>
+								</section>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a name="hwanong">
+							<div class="main">
+								<section>
+									<div>
+										<div class="ww">
+											<a name="acne3"><h1>화농성 여드름</h1></a>
+											<h3>염증(농/고름) 발생</h3>
+											<div id="acneeximg3"></div>
+											<div></div>
+											<div class="cfcfcf">
+												<p>좁쌀 여드름이 세균 감염에 의해 염증이 생겨 면역력 관리 필수</p>
+												<p>생활 리듬 + 만지지 않는 것이 중요</p>
+											</div>
+										</div>
+									</div> 
+								</section>
+								<section>
+									<div class="hash">#화농성 여드름 예방</div>
+									<h3>추천 관리법</h3>
+									<div class="garo">
+										<div class="reco2" id="i3mmgg1">적절한 수면</div>
+										<div class="reco2" id="i3mmgg2">유제품/ 기름 많은 음식 X</div>
+										<div class="reco2" id="i3mmgg3">영양제 섭취</div>
+									</div>
+									<div class="hash">#화농성 여드름 해결</div>
+									<h3>추천 아이템</h3>
+									<div class="garo">
+										<div>
+											<div class="garogaro" id="i3mmgg4"></div>
+											<p>에크논 크림</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i3mmgg5"></div>
+											<p>티트리 오일</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i3mmgg6"></div>
+											<p>시카/테카 크림</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i3mmgg7"></div>
+											<p>약산성 클렌징폼</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i3mmgg8"></div>
+											<p>염증 주사</p>
+										</div>
+									</div>
+								</section>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a name="monang">
+							<div class="main">
+								<section>
+									<div>
+										<div class="ww">
+											<h1>모낭염</h1>
+											<h3>염증(농/고름) 발생</h3>
+											<div id="acneeximg4"></div>
+											<div></div>
+											<div class="cfcfcf">
+												<p>모낭염은 모낭에서 염증이 발생하여 화농성 여드름과 달리 농이 없음</p>
+												<p>화농성 여드름과 구별 중요</p>
+											</div>
+										</div>
+									</div> 
+								</section>
+								<section>
+									<div class="hash">#모낭염 예방</div>
+									<h3>추천 관리법</h3>
+									<div class="garo">
+										<div class="reco2" id="i4mmgg1">면도기 소독</div>
+										<div class="reco2" id="i4mmgg2">만지지 않기</div>
+										<div class="reco2" id="i4mmgg3">압출 절대 금지</div>
+									</div>
+									<div class="hash">#모낭염 해결</div>
+									<h3>추천 아이템</h3>
+									<div class="garo">
+										<div>
+											<div class="garogaro" id="i4mmgg4"></div>
+											<p>소독용  에탄올</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i4mmgg5"></div>
+											<p>후시딘</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i4mmgg6"></div>
+											<p>에스로반</p>
+										</div>
+										<div>
+											<div class="garogaro" id="i4mmgg7"></div>
+											<p>염증 주사</p>
+										</div>
+									</div>
+								</section>
+							</div>
+						</a>
+					</li>
+				</ul>
+	
+				<div class="slide-control">
+					<div class="control01">
+						<label for="slide04" class="left"></label>
+						<label for="slide02" class="right"></label>
+					</div>
+					<div class="control02">
+						<label for="slide01" class="left"></label>
+						<label for="slide03" class="right"></label>
+					</div>
+					<div class="control03">
+						<label for="slide02" class="left"></label>
+						<label for="slide04" class="right"></label>
+					</div>
+					<div class="control04">
+						<label for="slide03" class="left"></label>
+						<label for="slide01" class="right"></label>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</body>
+</html>

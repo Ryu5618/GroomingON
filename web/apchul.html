@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>그루밍타임</title>
+	<link rel="stylesheet" href="../css/apchul.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../picture/logo.png">
+	<script>
+		function iinn() {
+			if (document.querySelector('#checkbox2').value === 'home') {
+				document.querySelector('.index').style.display = 'block';
+				document.querySelector('img').src = '../picture/logo_white.png';
+				document.querySelector('#checkbox2').value = 'out'
+			} else {
+				document.querySelector('.index').style.display = 'none';
+				document.querySelector('img').src = '../picture/logo_black.png';
+				document.querySelector('#checkbox2').value = 'home'
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div id="topLeft">
+			<div id="logo">
+				<a href="./index.html"><img src="../picture/logo_black.png" alt="로고"></a>
+			</div>
+			<nav>
+				<ul class="topMenu" id="rriigghhtt">
+					<li><a href="./acne_care/slide.html" class="unsel">트러블 종류</a></li>
+					<li><a href="./apchul.html" class="sel">여드름 압출</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="topRight">
+			<div class="sns_go">
+				<ul class="topMenu" id="lleefftt">
+					<li>
+						<a href="#">
+							<div id="moon">
+								<div class="btn-container">
+									<label class="switch btn-color-mode-switch" onclick="darkmode()">
+										<input value="1" id="color_mode" name="color_mode" type="checkbox">
+										<label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark" for="color_mode"></label>
+									</label>
+							</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div id="search">
+								<input id="checkbox2" type="checkbox" onclick="iinn()" value="home">
+								<label class="toggle toggle2" for="checkbox2">
+									<div id="bar4" class="bars"></div>
+									<div id="bar5" class="bars"></div>
+									<div id="bar6" class="bars"></div>
+								</label>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="index">
+		<div class="jip">
+			<div class="mal">
+				<div class="ms">
+					<div class="bigjae">맨즈케어</div>
+					<ul>
+						<li class="sojae"><a href="./care_squence/toner.html">기초화장품</a></li>
+						<li class="minijae"><a href="./care_squence/toner.html">- 토너</a></li>
+						<li class="minijae"><a href="./care_squence/emple.html">- 앰플</a></li>
+						<li class="minijae"><a href="./care_squence/cream.html">- 크림</a></li>
+						<li class="sojae"><a href="./typereco.html">피부타입</a></li>
+					</ul>
+				</div>
+				<div class="ms">
+					<div class="bigjae">피지/여드름</div>
+					<ul>
+						<li class="sojae"><a href="./acne_care/slide.html">트러블 종류</a></li>
+						<li class="minijae"><a href="./acne_care/slide.html #acne">- 좁쌀여드름</a></li>
+						<li class="minijae"><a href="./acne_care/slide.html #headhead">- 블랙헤드</a></li>
+						<li class="minijae"><a href="./acne_care/slide.html #hwanong">- 화농성여드름</a></li>
+						<li class="minijae"><a href="./acne_care/slide.html #monang">- 모낭염</a></li>
+						<li class="sojae"><a href="./apchul.html">여드름 압출</a></li>
+					</ul>
+				</div>
+				<div class="ms">
+					<div class="bigjae">색소침착</div>
+					<ul>
+						<li class="sojae"><a href="./pih.html">색소침착</a></li>
+						<li class="sojae"><a href="./suncream.html">선크림</a></li>
+					</ul>
+				</div>
+				<div class="ms">
+					<div class="bigjae">스토어</div>
+					<ul>
+						<li class="sojae"><a href="./product.html">스토어</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div id="what">
+			<div>
+				<h1>여드름 압출</h1>
+				<h3>압출의 중요성</h3>
+				<p class="ppp">여드름 방치 시, <span>화농성 여드름</span>으로 될 수 있고<br>
+					화농성 여드름은 <span>색소침착</span>과 <span>패인 흉터</span>의 원흉</p>
+			</div>
+			<div id="soso"></div>
+		</div>
+		<div class="tab_content">
+			<h3>여드름 압출 순서</h3>
+			<div class="down">
+				<div class="sstteepp" id="step1"></div>
+				<div class="sstteepp" id="step2"></div>
+				<div class="sstteepp" id="step3"></div>
+				<div class="sstteepp" id="step4"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

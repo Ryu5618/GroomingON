@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>그루밍타임</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/typereco.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../picture/logo.png">
+    </head>
+    <script>
+        function ggrr1() {
+            document.getElementById('gr1').style.display = 'block';
+            document.getElementById('gr2').style.display = 'none';
+            document.getElementById('gr3').style.display = 'none';
+        }
+        function ggrr2() {
+            document.getElementById('gr1').style.display = 'none';
+            document.getElementById('gr2').style.display = 'block';
+            document.getElementById('gr3').style.display = 'none';
+        }
+        function ggrr3() {
+            document.getElementById('gr1').style.display = 'none';
+            document.getElementById('gr2').style.display = 'none';
+            document.getElementById('gr3').style.display = 'block';
+        }
+        function darkmode() {
+            document.querySelector('body').style.backgroundColor = '#1B1B1B';
+            document.querySelector('img').src = '../picture/logo_white.png';
+        }
+        function iinn() {
+                if (document.querySelector('#checkbox2').value === 'home') {
+                    document.querySelector('.index').style.display = 'block';
+                    document.querySelector('img').src = '../picture/logo_white.png';
+                    document.querySelector('#checkbox2').value = 'out'
+                } else {
+                    document.querySelector('.index').style.display = 'none';
+                    document.querySelector('img').src = '../picture/logo_black.png';
+                    document.querySelector('#checkbox2').value = 'home'
+                }
+            }
+    </script>
+    <body>
+        <div id="mainContainer">
+            <header>
+                <div id="topLeft">
+                    <div id="logo">
+                        <a href="./index.html"><img src="../picture/logo_black.png" alt="logo"></a>
+                    </div>
+                    <nav>
+                        <ul class="topMenu" id="rriigghhtt">
+                            <li><a href="./care_squence/toner.html" class="unsel">기초화장품</a></li>
+                            <li><a href="./typereco.html" class="sel">피부타입</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="topRight">
+                    <div class="sns_go">
+                        <ul class="topMenu" id="lleefftt">
+                            <li>
+                                <a href="#">
+                                    <div id="moon">
+                                        <div class="btn-container">
+                                            <label class="switch btn-color-mode-switch" onclick="darkmode()">
+                                                <input value="1" id="color_mode" name="color_mode" type="checkbox">
+                                                <label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark" for="color_mode"></label>
+                                            </label>
+                                    </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div id="search">
+                                        <input id="checkbox2" type="checkbox" onclick="iinn()" value="home">
+                                        <label class="toggle toggle2" for="checkbox2">
+                                            <div id="bar4" class="bars"></div>
+                                            <div id="bar5" class="bars"></div>
+                                            <div id="bar6" class="bars"></div>
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="index">
+                <div class="jip">
+                    <div class="mal">
+                        <div class="ms">
+                            <div class="bigjae">맨즈케어</div>
+                            <ul>
+                                <li class="sojae"><a href="./care_squence/toner.html">기초화장품</a></li>
+                                <li class="minijae"><a href="./care_squence/toner.html">- 토너</a></li>
+                                <li class="minijae"><a href="./care_squence/emple.html">- 앰플</a></li>
+                                <li class="minijae"><a href="./care_squence/cream.html">- 크림</a></li>
+                                <li class="sojae"><a href="./typereco.html">피부타입</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">피지/여드름</div>
+                            <ul>
+                                <li class="sojae"><a href="./acne_care/slide.html">트러블 종류</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #acne">- 좁쌀여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #headhead">- 블랙헤드</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #hwanong">- 화농성여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #monang">- 모낭염</a></li>
+                                <li class="sojae"><a href="./apchul.html">여드름 압출</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">색소침착</div>
+                            <ul>
+                                <li class="sojae"><a href="./pih.html">색소침착</a></li>
+                                <li class="sojae"><a href="./suncream.html">선크림</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">스토어</div>
+                            <ul>
+                                <li class="sojae"><a href="./product.html">스토어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <div id="what">
+                    <div>
+                        <h1>BALANCE</h1>
+                        <h3>유수분 밸런스</h3>
+                        <p>우리의 피부가 좋아지고 환경 스트레스 요인으로부터 적절히 방어하기 위해서는<br>
+                            유분과 수분의 건강한 균형을 필요<br><br></p>
+                        <div class="bobo">
+                            <div class="sae">
+                                <div class="num">1</div>
+                                <div class="jack"></div>
+                                <div class="jae">가벼움</div>
+                            </div>
+                            <div class="sae">
+                                <div class="num">2</div>
+                                <div class="jack"></div>
+                                <div class="jae">중간</div>
+                            </div>
+                            <div class="sae">
+                                <div class="num">3</div>
+                                <div class="jack"></div>
+                                <div class="jae">무거움</div>
+                            </div>
+                            <div class="dcl"></div>
+                        </div>
+                    </div>
+                    <div id="gragra">
+                        <h3>그래프</h3>
+                        <div class="balgr">
+                            <div class="radio-inputs">
+                                <label class="radio">
+                                  <input type="radio" name="radio" checked="" onclick="ggrr1()">
+                                  <span class="name">지성</span>
+                                </label>
+                                <label class="radio">
+                                  <input type="radio" name="radio" onclick="ggrr2()">
+                                  <span class="name">중성/수부지</span>
+                                </label>     
+                                <label class="radio">
+                                  <input type="radio" name="radio" onclick="ggrr3()">
+                                  <span class="name">건성</span>
+                                </label>
+                            </div>
+                            <div class="gr">
+                                <div id="gr1"></div>
+                                <div id="gr2"></div>
+                                <div id="gr3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="type">
+                    <h1>RECOMMAND</h1>
+                    <h3>보습감별 화장품</h3>
+                    <div>
+                        <div class="firstbox" id="rb1">
+                            <div class="daeimg" id="dae1"></div>
+                            <div class="secondbox">
+                                <h3>1번 보습감</h3>
+                                <div class="recolist">
+                                    <div>
+                                        <div class="sangimg" id="sang1"></div>
+                                        <div>
+                                            <p>레미디 피에이치 밸런싱 토너</p>
+                                            <p>15,600원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang2"></div>
+                                        <div>
+                                            <p>클린 아크 앰플</p>
+                                            <p>21,500원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang3"></div>
+                                        <div>
+                                            <p>아쿠아 오아시스 수분 젤크림</p>
+                                            <p>19,900원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang4"></div>
+                                        <div>
+                                            <p>딥 멜라케어 멀티 브라이트닝 마스크</p>
+                                            <p>19,500원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="firstbox" id="rb2">
+                            <div class="daeimg" id="dae2"></div>
+                            <div class="secondbox">
+                                <h3>2번 보습감</h3>
+                                <div class="recolist">
+                                    <div>
+                                        <div class="sangimg" id="sang5"></div>
+                                        <div>
+                                            <p>초저분자 히알루론산 토너</p>
+                                            <p>13,900원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang6"></div>
+                                        <div>
+                                            <p>다이브인 저분자 히알루론산 세럼</p>
+                                            <p>22,400원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang7"></div>
+                                        <div>
+                                            <p>인테카 수딩 크림</p>
+                                            <p>21,900원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang8"></div>
+                                        <div>
+                                            <p>초저분자 히아루론산 마스크</p>
+                                            <p>15,900원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="firstbox" id="rb3">
+                            <div class="daeimg" id="dae3"></div>
+                            <div class="secondbox">
+                                <h3>3번 보습감</h3>
+                                <div class="recolist">
+                                    <div>
+                                        <div class="sangimg" id="sang9"></div>
+                                        <div>
+                                            <p>세라마이드 더마 속보습 스킨</p>
+                                            <p>12,900원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang10"></div>
+                                        <div>
+                                            <p>세라마이드샷 앰플</p>
+                                            <p>15,900원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang11"></div>
+                                        <div>
+                                            <p>솔리드인 세라마이드 크림</p>
+                                            <p>17,800원</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="sangimg" id="sang12"></div>
+                                        <div>
+                                            <p>밸런스풀 시카 마스크</p>
+                                            <p>14,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

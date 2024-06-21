@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>그루밍타임</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/suncream.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../picture/logo.png">
+        <script>
+            function iinn() {
+                if (document.querySelector('#checkbox2').value === 'home') {
+                    document.querySelector('.index').style.display = 'block';
+                    document.querySelector('img').src = '../picture/logo_white.png';
+                    document.querySelector('#checkbox2').value = 'out'
+                } else {
+                    document.querySelector('.index').style.display = 'none';
+                    document.querySelector('img').src = '../picture/logo_black.png';
+                    document.querySelector('#checkbox2').value = 'home'
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <header>
+                <div id="topLeft">
+                    <div id="logo">
+                        <a href="./index.html"><img src="../picture/logo_black.png" alt="로고"></a>
+                    </div>
+                    <nav>
+                        <ul class="topMenu" id="rriigghhtt">
+                            <li><a href="./pih.html" class="unsel">색소침착</a></li>
+                            <li><a href="./suncream.html" class="sel">선크림</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="topRight">
+                    <div class="sns_go">
+                        <ul class="topMenu" id="lleefftt">
+                            <li>
+                                <a href="#">
+                                    <div id="moon">
+                                        <div class="btn-container">
+                                            <label class="switch btn-color-mode-switch" onclick="darkmode()">
+                                                <input value="1" id="color_mode" name="color_mode" type="checkbox">
+                                                <label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark" for="color_mode"></label>
+                                            </label>
+                                    </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div id="search">
+                                        <input id="checkbox2" type="checkbox" onclick="iinn()" value="home">
+                                        <label class="toggle toggle2" for="checkbox2">
+                                            <div id="bar4" class="bars"></div>
+                                            <div id="bar5" class="bars"></div>
+                                            <div id="bar6" class="bars"></div>
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="index">
+                <div class="jip">
+                    <div class="mal">
+                        <div class="ms">
+                            <div class="bigjae">맨즈케어</div>
+                            <ul>
+                                <li class="sojae"><a href="./care_squence/toner.html">기초화장품</a></li>
+                                <li class="minijae"><a href="./care_squence/toner.html">- 토너</a></li>
+                                <li class="minijae"><a href="./care_squence/emple.html">- 앰플</a></li>
+                                <li class="minijae"><a href="./care_squence/cream.html">- 크림</a></li>
+                                <li class="sojae"><a href="./typereco.html">피부타입</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">피지/여드름</div>
+                            <ul>
+                                <li class="sojae"><a href="./acne_care/slide.html">트러블 종류</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #acne">- 좁쌀여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #headhead">- 블랙헤드</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #hwanong">- 화농성여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #monang">- 모낭염</a></li>
+                                <li class="sojae"><a href="./apchul.html">여드름 압출</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">색소침착</div>
+                            <ul>
+                                <li class="sojae"><a href="./pih.html">색소침착</a></li>
+                                <li class="sojae"><a href="./suncream.html">선크림</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">스토어</div>
+                            <ul>
+                                <li class="sojae"><a href="./product.html">스토어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <div id="what">
+                    <div>
+                        <h1>SUNCREAM</h1>
+                        <h3>선크림이란?</h3>
+                        <p>태양의 자외선(UV)으로부터 피부를 보호하기 위해<br>
+                            인공적으로 만들어진 원료를 물리적 화학적 작용을 통하여 만든 화장품</p>
+                    </div>
+                    <div id="uiq"></div>
+                </div>
+            </main>
+            <div id="mixx">
+                <div class="changeUp">
+                    <div>
+                        <div>선크림을 사용하기 귀찮아서</div>
+                        <div><p id="dam">"<span class="chbold">피부 좀 타고 말지</span>"</p></div>
+                        <div>
+                            라는 생각을 하실 것 입니다.<br>
+                            하지만 선크림의 이점은 이것 뿐만이 아닙니다.<br><br>
+                            그럼 선크림을 사용해서 얻는 이점은 무엇일까요?
+                        </div>
+                    </div>
+                    <div>
+                        <div class="arr"></div>
+                        <div class="arr"></div>
+                        <div class="arr"></div>
+                    </div>
+                    <div class="jangjeom">
+                        <div class="jangbox">
+                            <div  id="jang1"></div>
+                            <div>피부 톤 유지</div>
+                        </div>
+                        <div class="jangbox">
+                            <div id="jang2"></div>
+                            <div>노화 방지(주름)</div>
+                        </div>
+                        <div class="jangbox">
+                            <div id="jang3"></div>
+                            <div>색소침착 방지</div>
+                        </div>
+                    </div>
+                    <div class="jangjeom">
+                        <div class="jangbox">
+                            <div id="jang4"></div>
+                            <div>피부암 예방</div>
+                        </div>
+                        <div class="jangbox">
+                            <div id="jang5"></div>
+                            <div>기초 메이크업</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <div id="type">
+                    <h1>TYPE</h1>
+                    <h3>선크림의 종류</h3>
+                    <div>
+                        <div class="sunbox" id="st1">
+                            <div class="exsun" id="sunimg1"></div>
+                            <div class="exbox">
+                                <div class="num">01</div>
+                                <div class="sunname">무기자차</div>
+                                <div class="sunex">
+                                    <span>무기물질</span>을 이용해 자외선을 튕겨내는 방법<br>
+                                    자극이 적으며 바르는 즉시 자와선 차단 효과 생김<br>
+                                    <span>발림성이 뻑뻑하며 백탁 현상 발생</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sunbox" id="st2">
+                            <div class="exbox">
+                                <div class="num">02</div>
+                                <div class="sunname">유기자차</div>
+                                <div class="sunex">
+                                    <span>화학적 성분</span>을 이용해 자외선을 흡수하여<br>
+                                    다시 열로 배출하는 방식<br>
+                                    <span>발림성이 좋고 백탁 현상이 없음</span><br>
+                                    눈시름과 피부에 자극이 있을 수 있음<br>
+                                </div>
+                            </div>
+                            <div class="exsun" id="sunimg2"></div>
+                        </div>
+                        <div class="sunbox" id="st3">
+                            <div class="exsun" id="sunimg3"></div>
+                            <div class="exbox">
+                                <div class="num">03</div>
+                                <div class="sunname">혼합자차</div>
+                                <div class="sunex">
+                                    <span>무기자차와 유기자차를 혼합</span>한 선크림<br>
+                                    백탁이 적으며 부드러운 발림성<br>
+                                    다소 높은 가격대로 형성<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sunbox" id="st4">
+                            <div class="exbox">
+                                <div class="num">04</div>
+                                <div class="sunname">선스틱</div>
+                                <div class="sunex">
+                                    <span>스틱 방식</span>으로 피부에 덧바르는 형식<br>
+                                    <span>손에 묻지 않고 간편하게 사용 가능</span><br>
+                                    청결을 유지하기 힘듦<br>
+                                </div>
+                            </div>
+                            <div class="exsun" id="sunimg4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="noti">
+                    <h1>NOTICE</h1>
+                    <h3>구매 시 주의사항</h3>
+                    <div><div><span>선크림 </span> 구매 시, 따져야 할 <span>  기능</span> 및 <span> 성분</span></div></div>
+                    <div>
+                        <div class="nobox" id="notice1">
+                            <div>
+                                <div class="noticeimg" id="noimg1">
+
+                                </div>
+                            </div>
+                            <div class="sunex">UVB 차단 지표</div>
+                            <h3>SPF</h3>
+                        </div>
+                        <div class="nobox" id="notice2">
+                            <div>
+                                <div class="noticeimg" id="noimg2">
+
+                                </div>
+                            </div>
+                            <div class="sunex">UVA 차단 지표</div>
+                            <h3>PFA</h3>
+                        </div>
+                        <div class="nobox" id="notice3">
+                            <div>
+                                <div class="noticeimg" id="noimg3">
+
+                                </div>
+                            </div>
+                            <div class="sunex">폼으로 세정 가능한 선크림</div>
+                            <h3>이지워시</h3>
+                        </div>
+                        <div class="nobox" id="notice4">
+                            <div>
+                                <div class="noticeimg" id="noimg4">
+
+                                </div>
+                            </div>
+                            <div class="sunex">물 속에서도 안 지워는 선크림</div>
+                            <h3>워터프루브</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

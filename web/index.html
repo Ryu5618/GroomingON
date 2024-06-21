@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>그루밍타임</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/main_css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../picture/logo.png">
+        <script>
+            var x = 'white';
+            var y = '#1B1B1B';
+            var z = document.querySelector('.bars').style.backgroundColor;
+            function darkmode() {
+                document.querySelector('body').style.backgroundColor = y;
+                document.querySelector('img').src = '../picture/logo_white.png';
+                z = y;
+                document.querySelector('.sikafont_big').style.color = x;
+                document.querySelector('.mildfont_big').style.color = x;
+                document.querySelector('#mildfont > span').style.color = x;
+            }
+            function iinn() {
+                if (document.querySelector('#checkbox2').value === 'home') {
+                    document.querySelector('.index').style.display = 'block';
+                    document.querySelector('img').src = '../picture/logo_white.png';
+                    document.querySelector('#checkbox2').value = 'out'
+                } else {
+                    document.querySelector('.index').style.display = 'none';
+                    document.querySelector('img').src = '../picture/logo_black.png';
+                    document.querySelector('#checkbox2').value = 'home'
+                }
+            }
+        </script>
+        
+    </head> 
+    <body>
+        <div id="mainContainer">
+            <header style="position: fixed;">
+                <div id="topLeft">
+                    <div id="logo">
+                        <a href="./index.html"><img src="../picture/logo_black.png" alt="logo"></a>
+                    </div>
+                    <nav>
+                        <ul class="topMenu" id="rriigghhtt">
+                            <li><a href="./care_squence/toner.html" class="unsel">맨즈 케어</a></li>
+                            <li><a href="./acne_care/slide.html" class="unsel">피지/여드름</a></li>
+                            <li><a href="./pih.html" class="unsel">색소침착</a></li>
+                            <li><a href="./product.html" class="unsel">스토어</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="topRight">
+                    <div class="sns_go">
+                        <ul class="topMenu" id="lleefftt">
+                            <li>
+                                    <div id="moon">
+                                        <div class="btn-container"  onclick="darkmode()">
+                                            <label class="switch btn-color-mode-switch">
+                                                <input value="1" id="color_mode" name="color_mode" type="checkbox">
+                                                <label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark" for="color_mode"></label>
+                                            </label>
+                                    </div>
+                                    </div>
+                            </li>
+                            <li>
+                                    <div id="search">
+                                        <input id="checkbox2" type="checkbox" onclick="iinn()" value="home">
+                                        <label class="toggle toggle2" for="checkbox2">
+                                            <div id="bar4" class="bars"></div>
+                                            <div id="bar5" class="bars"></div>
+                                            <div id="bar6" class="bars"></div>
+                                        </label>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="index">
+                <div class="jip">
+                    <div class="mal">
+                        <div class="ms">
+                            <div class="bigjae">맨즈케어</div>
+                            <ul>
+                                <li class="sojae"><a href="./care_squence/toner.html">기초화장품</a></li>
+                                <li class="minijae"><a href="./care_squence/toner.html">- 토너</a></li>
+                                <li class="minijae"><a href="./care_squence/emple.html">- 앰플</a></li>
+                                <li class="minijae"><a href="./care_squence/cream.html">- 크림</a></li>
+                                <li class="sojae"><a href="./typereco.html">피부타입</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">피지/여드름</div>
+                            <ul>
+                                <li class="sojae"><a href="./acne_care/slide.html">트러블 종류</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #acne">- 좁쌀여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #headhead">- 블랙헤드</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #hwanong">- 화농성여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #monang">- 모낭염</a></li>
+                                <li class="sojae"><a href="./apchul.html">여드름 압출</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">색소침착</div>
+                            <ul>
+                                <li class="sojae"><a href="./pih.html">색소침착</a></li>
+                                <li class="sojae"><a href="./suncream.html">선크림</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">스토어</div>
+                            <ul>
+                                <li class="sojae"><a href="./product.html">스토어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <div id="explain">
+                    <div class="loader">
+                        <div class="child"></div>
+                      </div>
+                    <p id="proname">오늘의 화장품</p>
+                </div>
+                <div class="slidebox">
+                    <input type="radio" name="slide" id="slide01" checked>
+                    <input type="radio" name="slide" id="slide02">
+                    <input type="radio" name="slide" id="slide03">
+                    <input type="radio" name="slide" id="slide04">
+                    <ul class="slidelist">
+                        <li class="slideitem" id="imgimgimg1">
+                            <div>
+                                <label for="slide04" class="left"></label>
+                                <label for="slide02" class="right"></label>
+                                <div id="sikaback">
+                                    <div id="sikapo">
+                                        <div id="sikafont">
+                                            <span>#시카 #진정 #포 맨 라인</span>
+                                        </div>
+                                        <div class="sikafont_big">라운드랩 <span>포 맨</span></div>
+                                        <div class="sikafont_big" id="sikafont_bold">소나무 시카</div>
+                                        <!-- <div class="cos9">구입하기</div> -->
+                                    </div>
+                                    <div id="sikapic">
+                                        <a href="https://roundlab.co.kr/product/%ED%8F%AC-%EB%A7%A8-%EC%86%8C%EB%82%98%EB%AC%B4-%EC%A7%84%EC%A0%95-%EC%8B%9C%EC%B9%B4-%ED%86%A0%EB%84%88-200ml/235/category/116/display/1/"><div class="sikaproduct" id="sikatoner"></div></a>
+                                        <a href="https://roundlab.co.kr/product/%ED%8F%AC-%EB%A7%A8-%EC%86%8C%EB%82%98%EB%AC%B4-%EC%A7%84%EC%A0%95-%EC%8B%9C%EC%B9%B4-%EB%A1%9C%EC%85%98-200ml/236/category/116/display/1/"><div class="sikaproduct" id="sikalotion"></div></a>
+                                        <a href="https://roundlab.co.kr/product/%ED%8F%AC-%EB%A7%A8-%EC%86%8C%EB%82%98%EB%AC%B4-%EC%A7%84%EC%A0%95-%EC%8B%9C%EC%B9%B4-%ED%81%AC%EB%A6%BC-75ml/237/category/116/display/1//"><div class="sikaproduct" id="sikacream"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slideitem" id="imgimgimg2">
+                            <div>
+                                <label for="slide01" class="left"></label>
+                                <label for="slide03" class="right"></label>
+                                <div id="mildback">
+                                    <div id="mildpo">
+                                        <div class="cos99"><a href="https://mildlab.co.kr/product/%EC%83%89%EC%86%8C%EC%B9%A8%EC%B0%A9-%EB%94%A5-%EB%A9%9C%EB%9D%BC%EC%BC%80%EC%96%B4-%EC%95%B0%ED%94%8C-50ml/698/category/282/display/1/">구입하기</a></div>
+                                        <div id="mildfont">
+                                            <span>#멜라닌 #색소침착 #2주 흔적 순삭</span>
+                                        </div>
+                                        <div class="mildfont_big">마일드랩<br>딥 멜라케어</div>
+                                    </div>
+                                    <div id="mildpic">
+                                        <div class="mildproduct"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slideitem" id="imgimgimg3">
+                            <div>
+                                <label for="slide02" class="left"></label>
+                                <label for="slide04" class="right"></label>
+                                <div id="well"></div>
+                            </div>
+                        </li>
+                        <li class="slideitem" id="imgimgimg4">
+                            <div>
+                                <label for="slide03" class="left"></label>
+                                <label for="slide01" class="right"></label>
+                            </div>
+                            <div id="cica"></div>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

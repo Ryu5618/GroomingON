@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>그루밍타임</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/pih.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../picture/logo.png">
+        <script>
+            function iinn() {
+                if (document.querySelector('#checkbox2').value === 'home') {
+                    document.querySelector('.index').style.display = 'block';
+                    document.querySelector('img').src = '../picture/logo_white.png';
+                    document.querySelector('#checkbox2').value = 'out'
+                } else {
+                    document.querySelector('.index').style.display = 'none';
+                    document.querySelector('img').src = '../picture/logo_black.png';
+                    document.querySelector('#checkbox2').value = 'home'
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <header>
+                <div id="topLeft">
+                    <div id="logo">
+                        <a href="./index.html"><img src="../picture/logo_black.png" alt="로고"></a>
+                    </div>
+                    <nav>
+                        <ul class="topMenu" id="rriigghhtt">
+                            <li><a href="./pih.html" class="sel">색소침착</a></li>
+                            <li><a href="./suncream.html" class="unsel">선크림</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="topRight">
+                    <div class="sns_go">
+                        <ul class="topMenu" id="lleefftt">
+                            <li>
+                                <a href="#">
+                                    <div id="moon">
+                                        <div class="btn-container">
+                                            <label class="switch btn-color-mode-switch" onclick="darkmode()">
+                                                <input value="1" id="color_mode" name="color_mode" type="checkbox">
+                                                <label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark" for="color_mode"></label>
+                                            </label>
+                                    </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div id="search">
+                                        <input id="checkbox2" type="checkbox" onclick="iinn()" value="home">
+                                        <label class="toggle toggle2" for="checkbox2">
+                                            <div id="bar4" class="bars"></div>
+                                            <div id="bar5" class="bars"></div>
+                                            <div id="bar6" class="bars"></div>
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="index">
+                <div class="jip">
+                    <div class="mal">
+                        <div class="ms">
+                            <div class="bigjae">맨즈케어</div>
+                            <ul>
+                                <li class="sojae"><a href="./care_squence/toner.html">기초화장품</a></li>
+                                <li class="minijae"><a href="./care_squence/toner.html">- 토너</a></li>
+                                <li class="minijae"><a href="./care_squence/emple.html">- 앰플</a></li>
+                                <li class="minijae"><a href="./care_squence/cream.html">- 크림</a></li>
+                                <li class="sojae"><a href="./typereco.html">피부타입</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">피지/여드름</div>
+                            <ul>
+                                <li class="sojae"><a href="./acne_care/slide.html">트러블 종류</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #acne">- 좁쌀여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #headhead">- 블랙헤드</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #hwanong">- 화농성여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #monang">- 모낭염</a></li>
+                                <li class="sojae"><a href="./apchul.html">여드름 압출</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">색소침착</div>
+                            <ul>
+                                <li class="sojae"><a href="./pih.html">색소침착</a></li>
+                                <li class="sojae"><a href="./suncream.html">선크림</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">스토어</div>
+                            <ul>
+                                <li class="sojae"><a href="./product.html">스토어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <div id="what">
+                    <div>
+                        <h1>PIH</h1>
+                        <h3>색소침착이란?</h3>
+                        <p class="ppp">피부에 반복적인 특정 자극, 외상, 피부질환 등을<br>
+                            앓은 후 그 자리의 피부색이 검게되는 현상</p>
+                    </div>
+                    <div id="soso"></div>
+                </div>
+            </main>
+            <div class="mixx">
+                <div class="changeUp">
+                    <div>
+                        <div>색소침착과 붉은기 구분은 필수!</div>
+                        <div><p id="dam">"<span class="chbold">색소침착과 붉은기</span> 구분 방법은?"</p></div>
+                    </div>
+                    <div class="seolseol">
+                        <div class="pihpic">
+                            <div>붉은기</div>
+                            <div>여드름이 자극을 받거나 압출한 뒤 <br>붉게 변하는 상태</div>
+                            <div class="chimimg" id="chim1"></div>
+                        </div>
+                        <div class="pihpic">
+                            <div>색소침착</div>
+                            <div>붉은기가 시간이 지나 <br>갈색이나 검은색으로 변하는 상태</div>
+                            <div class="chimimg" id="chim2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <div id="type">
+                    <div>
+                        <h1>TYPE</h1>
+                        <h3>색소침착 화장품 종류</h3>
+                    </div>
+                    <div class="vit">
+                        <p>
+                            <span>바타민은 색소침착 개선에<br>중요한 성분</span><br><br><br>
+                            비타민 화장품은 고함량일수록<br>
+                            자극적이기 때문에, 처음 사용할 땐<br>
+                            <span>소량씩 사용 추천!</span>
+                        </p>
+                        <div>
+                            <div class="va">
+                                <div class="vitimg" id="img1"></div>
+                                <div>
+                                    <div class="vt">비타민C</div>
+                                    <div class="ma">
+                                        <div class="mf">주된 기능</div>
+                                        <div class="fe">
+                                            <span class="fc">미백</span>
+                                            <span class="fc">안티에이징</span>
+                                            <span class="fc">황산화</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="va">
+                                <div class="vitimg" id="img2"></div>
+                                <div>
+                                    <div class="vt">비타민B3 (나이아신아마이드)</div>
+                                    <div class="ma">
+                                        <div class="mf">주된 기능</div>
+                                        <div class="fe">
+                                            <span class="fc">과색소침착</span>
+                                            <span class="fc">항염</span>
+                                            <span class="fc">피지조절</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="va">
+                                <div class="vitimg" id="img3"></div>
+                                <div>
+                                    <div class="vt">비타민A (레티노이드 계열)</div>
+                                    <div class="ma">
+                                        <div class="mf">주된 기능</div>
+                                        <div class="fe">
+                                            <span class="fc">각질제거</span>
+                                            <span class="fc">안티에이징</span>
+                                            <span class="fc">탄력</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

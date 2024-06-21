@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>그루밍타임</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/exexStyle.css">
+        <link rel="stylesheet" href="../css/filter.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../picture/logo.png">
+        <script>
+            function iinn() {
+                if (document.querySelector('#checkbox2').value === 'home') {
+                    document.querySelector('.index').style.display = 'block';
+                    document.querySelector('img').src = '../picture/logo_white.png';
+                    document.querySelector('#checkbox2').value = 'out'
+                } else {
+                    document.querySelector('.index').style.display = 'none';
+                    document.querySelector('img').src = '../picture/logo_black.png';
+                    document.querySelector('#checkbox2').value = 'home'
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <header>
+                <div id="topLeft">
+                    <div id="logo">
+                        <a href="./index.html"><img src="../picture/logo_black.png" alt="logo"></a>
+                    </div>
+                    <nav>
+                        <ul class="topMenu" id="rriigghhtt">
+                            <li><a href="#" class="sel">스토어</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="topRight">
+                    <div class="sns_go">
+                        <ul class="topMenu" id="lleefftt">
+                            <li>
+                                    <div id="moon">
+                                        <div class="btn-container"  onclick="darkmode()">
+                                            <label class="switch btn-color-mode-switch">
+                                                <input value="1" id="color_mode" name="color_mode" type="checkbox">
+                                                <label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark" for="color_mode"></label>
+                                            </label>
+                                    </div>
+                                    </div>
+                            </li>
+                            <li>
+                                    <div id="search">
+                                        <input id="checkbox2" type="checkbox" onclick="iinn()" value="home">
+                                        <label class="toggle toggle2" for="checkbox2">
+                                            <div id="bar4" class="bars"></div>
+                                            <div id="bar5" class="bars"></div>
+                                            <div id="bar6" class="bars"></div>
+                                        </label>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="index">
+                <div class="jip">
+                    <div class="mal">
+                        <div class="ms">
+                            <div class="bigjae">맨즈케어</div>
+                            <ul>
+                                <li class="sojae"><a href="./care_squence/toner.html">기초화장품</a></li>
+                                <li class="minijae"><a href="./care_squence/toner.html">- 토너</a></li>
+                                <li class="minijae"><a href="./care_squence/emple.html">- 앰플</a></li>
+                                <li class="minijae"><a href="./care_squence/cream.html">- 크림</a></li>
+                                <li class="sojae"><a href="./typereco.html">피부타입</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">피지/여드름</div>
+                            <ul>
+                                <li class="sojae"><a href="./acne_care/slide.html">트러블 종류</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #acne">- 좁쌀여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #headhead">- 블랙헤드</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #hwanong">- 화농성여드름</a></li>
+                                <li class="minijae"><a href="./acne_care/slide.html #monang">- 모낭염</a></li>
+                                <li class="sojae"><a href="./apchul.html">여드름 압출</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">색소침착</div>
+                            <ul>
+                                <li class="sojae"><a href="./pih.html">색소침착</a></li>
+                                <li class="sojae"><a href="./suncream.html">선크림</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms">
+                            <div class="bigjae">스토어</div>
+                            <ul>
+                                <li class="sojae"><a href="./product.html">스토어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bonemoon">
+                <main id="ccoonn">
+                    <aside id="left-sidebar">
+                        <div class="filterrrrr">
+                            <p id="filter">
+                                FILTER
+                            </p>
+                        </div>
+                        <div class="filterBlock">
+                            <p>피부 타입</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" class="chk" name="skin"  id="skin-oily">
+                                    <label for="skin">지성</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk" name="skin" id="skin-combination">
+                                    <label for="skin">중성/수부지</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk" name="skin" id="skin-dry">
+                                    <label for="skin">건성</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filterBlock">
+                            <p>계절</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" class="chk" name="season" id="season-spring">
+                                    <label for="season">봄</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk" name="season"  id="season-summer">
+                                    <label for="season">여름</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk" name="season" id="season-fall">
+                                    <label for="season">가을</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk" name="season" id="season-winter">
+                                    <label for="season">겨울</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filterBlock">
+                            <p>화장품</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" class="chk" name="cosmetics">
+                                    <label for="cosmetics">토너</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk" name="cosmetics">
+                                    <label for="cosmetics">앰플</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk" name="cosmetics">
+                                    <label for="cosmetics">로션/크림</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk" name="cosmetics">
+                                    <label for="cosmetics">ETC</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <section>
+                        <div class="searchResult">
+                            <div class="filterrrrr">
+                                <p id="filter">
+                                    PRODUCT
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ggrriidd">
+                            <div class="lobox">
+                                <div class="lopic" id="lo1"></div>
+                                <div class="loname">레미디 피에이치 밸런싱 토너</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">15,600원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo2"></div>
+                                <div class="loname">클린 아크 앰플</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">21,500원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo3"></div>
+                                <div class="loname">아쿠아 오아시스 수분 젤크림</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">19,900원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo4"></div>
+                                <div class="loname">초저분자 히알루론산 토너</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">13,900원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo5"></div>
+                                <div class="loname">다이브인 저분자 히알루론산 세럼</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">22,400원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo6"></div>
+                                <div class="loname">인테카 수딩 크림</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">21,900원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo7"></div>
+                                <div class="loname">세라마이드 더마 속보습 스킨</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">12,900원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo8"></div>
+                                <div class="loname">세라마이드샷 앰플</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">15,900원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo9"></div>
+                                <div class="loname">솔리드인 세라마이드 크림</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">17,800원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo10"></div>
+                                <div class="loname">딥 멜라케어 멀티 브라이트닝 마스크</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">19,500원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo11"></div>
+                                <div class="loname">초저분자 히아루론산 마스크</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">15,900원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo12"></div>
+                                <div class="loname">밸런스풀 시카 마스크</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">14,000원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo13"></div>
+                                <div class="loname">시카페인 트러블리셋 세럼</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">26,900원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo14"></div>
+                                <div class="loname">어니언 플루이드 선크림 50ml</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">16,900원</div>
+                            </div>
+                            <div class="lobox">
+                                <div class="lopic" id="lo15"></div>
+                                <div class="loname">바이옴 레미디 퍼펙트 보송 선스틱</div>
+                                <div class="lliinnee"></div>
+                                <div class="loprice">15,600원</div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+    </body>
+</html>
