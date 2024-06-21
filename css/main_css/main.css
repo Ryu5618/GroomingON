@@ -1,0 +1,376 @@
+* {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+#mainContainer {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+a {
+  color: black;
+  text-decoration-line: none;
+}
+
+#explain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+#proname {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+ul, li {
+    list-style:none;
+}
+
+[name="slide"] {
+    display:none;
+}
+.slidebox {
+    width:100%;
+    min-height: 100vh;
+    margin:0 auto;
+    text-align:center;
+}
+.slidebox .slidelist {
+	white-space:nowrap;
+	font-size:0;
+	overflow:hidden;
+}
+.slidebox .slideitem {
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+    min-height: 100vh;
+	transition:all .35s;
+}
+.slidebox .slideitem label {
+	position:absolute;
+	z-index:10;
+	top:50%;
+	transform:translateY(-50%);
+	padding:20px;
+	border-radius:50%;
+	cursor:pointer;
+}
+label.left {
+	left:0;
+  position: fixed;
+	background-image:url(../../haeder_icon/left.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+  background-size: contain;
+  width: 80px;
+  aspect-ratio: 1/1;
+  opacity: 0.1;
+}
+label.right {
+	right:0; 
+  position: fixed;
+	background-image:url(../../haeder_icon/right.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+  background-size: contain;
+  width: 80px;
+  aspect-ratio: 1/1;
+  opacity: 0.1;
+}
+
+/* 페이징 스타일 */
+.paginglist {text-align:center;padding:30px 0;}
+.paginglist > li {display:inline-block;vertical-align:middle;margin:0 10px;}
+.paginglist > li > label {display:block;padding:10px 30px;border-radius:10px;background:#ccc;cursor:pointer;}
+.paginglist > li:hover > label {background:#333;}
+
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 20s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 20s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 20s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 20s infinite;}
+
+@keyframes slide01 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:-200%;}
+	73% {left:-200%;}
+	75% {left:-300%;}
+	98% {left:-300%;}
+	100% {left:0%;}
+}
+@keyframes slide02 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:-200%;}
+	73% {left:-200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+@keyframes slide03 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:200%;}
+	73% {left:200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+@keyframes slide04 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:300%;}
+	48% {left:300%;}
+	50% {left:200%;}
+	73% {left:200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+
+.loader {
+    width: 100px;
+    height: 3px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .child {
+    width: 60px;
+    height: 3px;
+    background-color: #0064FF;
+    border-radius: 20px;
+    z-index: 0;
+    margin-left: -60px;
+    animation: go 5s 0s infinite;
+  }
+  
+  @keyframes go {
+    from {
+      margin-left: -100px;
+      width: 80px;
+    }
+    to {
+      width: 30px;
+      margin-left: 110px;
+    }
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  @keyframes text {
+    0% {
+      content: "Loading";
+    }
+  
+    30% {
+      content: "Loading.";
+    }
+  
+    60% {
+      content: "Loading..";
+    }
+  
+    100% {
+      content: "Loading...";
+    }
+  }
+  
+#rriigghhtt a {
+    font-weight: 700;
+}
+
+#imgimgimg1 {
+  background: url('../../picture/main/background_sika.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+#sikapo {
+  position: absolute;
+  top: 230px;
+  left: 110px;
+  text-align: left;
+}
+#sikafont>span {
+  font-size: 36px;
+  font-weight: 700;
+  color: #095B4E;
+}
+.sikafont_big {
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 116%;
+}
+.sikafont_big>span {
+  font-size: 128px;
+  font-weight: 700;
+}
+#sikafont_bold {
+  color: #095B4E;
+}
+.cos9 {
+  width: 230px;
+  height: 82px;
+  background-color: #095B4E;
+  color: #F3F4F6;
+  font-size: 36px;
+  font-weight: 700;
+  border-radius: 80px;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sikapic {
+  width: 1000px;
+  height: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  right: 90px;
+
+}
+.sikaproduct {
+  width: 270px;
+  height: 650px;
+  transition: all 0.2s linear;
+}
+#sikatoner {
+  align-self: flex-end;
+  background: url('../../picture/main/sika2-shadow.png') no-repeat;
+  background-size: contain;
+}
+#sikalotion {
+  background: url('../../picture/main/sika1-shadow.png') no-repeat;
+  background-size: contain;
+}
+#sikacream {
+  align-self: flex-start;
+  background: url('../../picture/main/sika3-shadow.png') no-repeat;
+  background-size: contain;
+}
+
+.sikaproduct:hover {
+  transform: scale(1.2);
+}
+#sikapic>a:nth-of-type(1) {
+  align-self: flex-end;
+}#sikapic>a:nth-of-type(3) {
+  align-self: flex-start;
+}
+
+#mildpo {
+  position: absolute;
+  bottom: 100px;
+  left: 110px;
+  text-align: left;
+}
+#mildfont>span {
+  font-size: 36px;
+  color: #2A2021;
+}
+.mildfont_big {
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 116%;
+  color: #2A2021;
+}
+
+#mildpic {
+  width: 750px;
+  min-height: 100vh;
+  background: url('../picture/main/main2.jpg') no-repeat;
+  background-size: cover;
+  float: right;
+
+}
+.mildproduct:hover {
+  transform: scale(1.2);
+}
+#imgimgimg2 {
+  background: url('../../picture/main/background_mild.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.cos99 {
+  width: 230px;
+  height: 82px;
+  background-color: #2A2021;
+  border-radius: 80px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cos99:hover {
+  transform: scale(1.2);
+}
+.cos99>a {
+  color: #F3F4F6;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#imgimgimg3 {
+  background: url('../../picture/main/background_well.png') no-repeat;
+  background-size: cover;
+  background-position: center 90%;
+  position: relative;
+}
+#well {
+  width: 800px;
+  aspect-ratio: 1/1;
+  background: url('../../picture/main/wellage.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#imgimgimg4 {
+  background: url('../../picture/main/background_cicapain.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+#cica {
+  width: 1000px;
+  height: 660px;
+  background: url('../../picture/main/cica_pain.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

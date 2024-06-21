@@ -1,0 +1,208 @@
+* {
+    font-family: "Noto Sans KR";
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+#header {
+    width: 100%;
+    height: 200px;
+}
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+h1 {
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 40px;
+}
+a {
+    color: black;
+    text-decoration-line: none;
+}
+
+#what {
+    display: flex;
+    justify-content: space-between;
+}
+.ppp {
+    margin-top: 30px;
+    font-size: 24px;
+}
+#soso {
+    width: 400px;
+    height: 400px;
+    background: url(../picture/suncream/so.png) no-repeat;
+    background-size: contain;
+}
+
+.mixx {
+    width: 100%;
+    background-color: #F9F9FB;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 140px 0;
+}
+.changeUp {
+    text-align: center;
+}
+.changeUp>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 84px;
+}
+.changeUp>div:first-child>div:first-child {
+    color: #0064FF;
+    font-weight: 700;
+}
+#dam {
+    font-size: 48px;
+}
+.chbold {
+    display: inline;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(to top, #CDDBFE 30%, transparent 30%);
+}
+
+.seolseol {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pihpic {
+    width: 590px;
+    height: 580px;
+    border-radius: 20px;
+    text-align: left;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    box-shadow: 2px 4px 12px #00000014;
+}
+.pihpic>div:first-child {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.chimimg {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 100%;
+}
+#chim1 {
+    background: url(../picture/pih/chim1.jpg) no-repeat;
+    background-size: contain;
+}
+#chim2 {
+    background: url(../picture/pih/chim2.jpg) no-repeat;
+    background-size: contain;
+}
+
+#type {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.vit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.vit>p {
+    font-size: 24px;
+}
+.vit>p>span {
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(to top, #CDDBFE 30%, transparent 30%);
+}
+.vit>div>div {
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.vit>div>div:nth-child(2) {
+    margin-left: 0;
+    margin-right: 100px;
+}
+
+.va {
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 4px 12px #00000014;
+}
+.vitimg {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 0 40px 0 20px;
+}
+.vt {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(to top, #CDDBFE 30%, transparent 30%);
+
+}
+.ma {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #B0B9C2;
+    padding-top: 20px;
+}
+.mf {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.fc {
+    font-size: 20px;
+    padding: 7px 20px;
+    background-color: #0064FF;
+    color: white;
+    border-radius: 30px;
+}
+
+
+
+#img1 {
+    background: url(../picture/pih/vit-c.jpg) no-repeat;
+    background-size: contain;
+}
+#img2 {
+    background: url(../picture/pih/vit-b.jpg) no-repeat;
+    background-size: contain;
+}
+#img3 {
+    background: url(../picture/pih/vit-a.jpg) no-repeat;
+    background-size: contain;
+}

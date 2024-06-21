@@ -1,0 +1,23 @@
+* {
+    font-size: 18px;
+    font-family: "Noto Sans KR";
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: black;
+    text-decoration-line: none;
+}
+body {
+    background: black;
+}
+#mainContainer {
+    width: 100%;
+    height: 3060px;
+    background: white;
+}
+#ccoonn {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}

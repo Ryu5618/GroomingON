@@ -1,0 +1,27 @@
+.typeContainer {
+    width: 594px;
+    height: 440px;
+    text-align: center;
+    border-radius: 20px;
+}
+.typeContainer>div {
+    font-size: 32px;
+    margin: 310px 0 14px 0;
+    font-weight: 600;
+}
+#tc1 {
+    background-image: url('../../picture/squence/cr1.png');
+    background-size: cover;
+}
+#tc2 {
+    background-image: url('../../picture/squence/cr2.png');
+    background-size: cover;
+}
+
+#cosrec {
+    width: 328px;
+    margin: 0 auto;
+    margin-top: 156px;
+    border: 1px dashed blue;
+    box-sizing: border-box;
+}

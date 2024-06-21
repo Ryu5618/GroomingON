@@ -1,0 +1,299 @@
+* {
+    font-size: 14px;
+    font-family: "Noto Sans KR";
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+#header {
+    width: 100%;
+    height: 200px;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+#non {
+    width: 100%;
+    height: 200px;
+}
+.main > div {
+    margin: 0 auto;
+    width: 1200px;
+    height: 750px;
+}
+h1 {
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    background: linear-gradient(to top, #CDDBFE 30%, transparent 30%);
+}
+h3 {
+    font-size: 40px;
+}
+
+
+section:nth-of-type(1) {
+    width: 464px;
+    float: left;
+}
+section:nth-of-type(2) {
+    width: 630px;
+    float: right;
+    margin-top: 70px;
+    
+}
+#acneeximg1 {
+    background-image: url(../../picture/acne/whitehead.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+#acneeximg2 {
+    background-image: url(../../picture/acne/blackhead.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+#acneeximg3 {
+    background-image: url(../../picture/acne/hwa.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+#acneeximg4 {
+    background-image: url(../../picture/acne/monang.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+#acneeximg1 + #acneeximg2 +#acneeximg3 + #acneeximg4 + div {
+    margin-top: 40px;
+    width: 464px;
+    height: 1px;
+    background-color: black;
+}
+.cfcfcf {
+    text-align: center;
+    margin-top: 20px;
+}
+.cfcfcf>p:last-child {
+    margin-top: 4px;
+    color: #0064FF;
+    font-weight: 700;
+}
+
+.hash {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0064FF;
+}
+.garo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.reco1 {
+    width: 310px;
+    height: 140px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 108px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 2px 4px 12px #00000014;
+}
+.reco2 {
+    width: 200px;
+    height: 140px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 108px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 2px 4px 12px #00000014;
+}
+.garogaro {
+    width: 110px;
+    height: 110px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 2px 4px 12px #00000014;
+}
+.garo p {
+    text-align: center;
+}
+
+#iimmgg1 {
+    background-image: url('../../picture/acne/garogaro-01.png');
+}
+#iimmgg2 {
+    background-image: url('../../picture/acne/garogaro-02.png');
+}
+#iimmgg3 {
+    background-image: url('../../picture/acne/ri-01.png');
+}
+#iimmgg4 {
+    background-image: url('../../picture/acne/ri-02.png');
+}
+#iimmgg5 {
+    background-image: url('../../picture/acne/ri-03.png');
+}
+#iimmgg6 {
+    background-image: url('../../picture/acne/ri-04.png');
+}
+#iimmgg7 {
+    background-image: url('../../picture/acne/ri-05.png');
+}
+
+
+
+#i2mmgg1 {
+    background-image: url('../../picture/acne/garogaro-03.png');
+}
+#i2mmgg2 {
+    background-image: url('../../picture/acne/garogaro-04.png');
+}
+#i2mmgg3 {
+    background-image: url('../../picture/acne/garogaro-05.png');
+}
+
+#i2mmgg4 {
+    background-image: url('../../picture/acne/ri-01.png');
+}
+#i2mmgg5 {
+    background-image: url('../../picture/acne/ri-06.png');
+}
+#i2mmgg6 {
+    background-image: url('../../picture/acne/ri-07.png');
+}
+#i2mmgg7 {
+    background-image: url('../../picture/acne/ri-03.png');
+}
+#i2mmgg8 {
+    background-image: url('../../picture/acne/ri-08.png');
+}
+
+
+
+
+#i3mmgg1 {
+    background-image: url('../../picture/acne/garogaro-06.png');
+}
+#i3mmgg2 {
+    background-image: url('../../picture/acne/garogaro-07.png');
+}
+#i3mmgg3 {
+    background-image: url('../../picture/acne/garogaro-08.png');
+}
+#i3mmgg4 {
+    background-image: url('../../picture/acne/ri-09.png');
+}
+#i3mmgg5 {
+    background-image: url('../../picture/acne/ri-10.png');
+}
+#i3mmgg6 {
+    background-image: url('../../picture/acne/ri-11.png');
+}
+#i3mmgg7 {
+    background-image: url('../../picture/acne/ri-03.png');
+}
+#i3mmgg8 {
+    background-image: url('../../picture/acne/ri-12.png');
+}
+
+
+
+#i4mmgg1 {
+    background-image: url('../../picture/acne/garogaro-09.png');
+}
+#i4mmgg2 {
+    background-image: url('../../picture/acne/garogaro-10.png');
+}
+#i4mmgg3 {
+    background-image: url('../../picture/acne/garogaro-11.png');
+}
+#i4mmgg4 {
+    background-image: url('../../picture/acne/ri-13.png');
+}
+#i4mmgg5 {
+    background-image: url('../../picture/acne/ri-14.png');
+}
+#i4mmgg6 {
+    background-image: url('../../picture/acne/ri-15.png');
+}
+#i4mmgg7 {
+    background-image: url('../../picture/acne/ri-12.png');
+}
+
+		/* 브라우저 마진과 패딩 리셋 */
+
+		/* INPUT 가리기 */
+		.section [id*="slide"] {display:none;}
+		
+		/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+		.section .slidewrap {width:100%;margin:0 auto;overflow:hidden;position:relative;}
+		.section .slidelist {white-space:nowrap;font-size:0;}
+		.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+		.section .slidelist > li > div {display:block;position:relative;}
+
+		/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+		.section .slide-control {
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:10;
+			width:100%;
+			height:100%;}
+		.slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer; opacity: 0.5;}
+		.slide-control .left {left:30px;background:url('../../haeder_icon/left1.png') center center / 100% no-repeat;}
+		.slide-control .right {right:30px;background:url('../../haeder_icon/right1.png') center center / 100% no-repeat;}
+		.slide-control [class*="control"] {display:none;}
+
+		/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+		.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+		.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+		.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+		.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+		
+		/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+		.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+		.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+		.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+		.section [id="slide04"]:checked ~ .slidewrap .control04 {display:block;}
